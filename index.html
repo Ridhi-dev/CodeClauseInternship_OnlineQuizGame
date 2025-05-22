@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Quiz Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz Game</h1>
+
+    <!-- Step 1: Subject selection -->
+    <div id="setup-container">
+      <h2>Select Subject</h2>
+      <select id="subject-select">
+        <option value="" disabled selected>Select a subject</option>
+        <option value="math">Basic Maths</option>
+        <option value="science">Science</option>
+        <option value="gk">General Knowledge</option>
+        <option value="mixed">Miscellaneous</option>
+      </select>
+   <hr>
+      <br>
+      <h2>Select Number of Questions</h2>
+      <select id="question-count-select" disabled></select>
+
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Step 2: Quiz questions -->
+    <div id="quiz-box" class="hidden">
+      <div id="question">Question appears here</div>
+      <div id="answer-buttons" class="btn-grid"></div>
+      <button id="next-btn" class="next-btn">Next</button>
+    </div>
+
+    <!-- Step 3: Results -->
+    <div id="result-box" class="hidden">
+      <h2>Quiz Finished!</h2>
+      <div id="final-score"></div>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

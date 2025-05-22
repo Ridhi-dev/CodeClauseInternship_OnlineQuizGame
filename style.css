@@ -1,0 +1,166 @@
+/* Reset & base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .quiz-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    width: 95%;
+    max-width: 800px;
+    animation: fadeIn 0.6s ease-in-out;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffd700;
+  }
+  
+  select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  select {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  button {
+    background: #00bcd4;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  button:hover {
+    background: #0097a7;
+    transform: scale(1.05);
+  }
+  
+  /* Question area */
+  #question {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  #options {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #options li {
+    background: #ffffff20;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  #options li:hover {
+    background: #ffffff40;
+    transform: scale(1.02);
+  }
+  
+  .correct {
+    background-color: #4caf50 !important;
+  }
+  
+  .wrong {
+    background-color: #f44336 !important;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Results */
+  #final-score {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  /* Feedback with animation */
+  .feedback {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: pop 0.5s ease-in-out;
+  }
+  
+  /* Badges */
+  .badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 10px;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  .badge.gold {
+    background: gold;
+    color: #000;
+  }
+  
+  .badge.silver {
+    background: silver;
+    color: #000;
+  }
+  
+  .badge.bronze {
+    background: #cd7f32;
+    color: #fff;
+  }
+  
+  .badge.starter {
+    background-color: #607d8b;
+    color: #fff;
+  }
+  
+  .badge.learning {
+    background-color: #03a9f4;
+    color: #fff;
+  }
+  
+  /* Animations */
+  @keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+
+ 
+  
